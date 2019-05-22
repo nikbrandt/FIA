@@ -1,0 +1,84 @@
+mixin navbarItem(item, href)
+	if (item === title)
+		span(class='item active') #{item}
+	else
+		a(class='item' href=href) #{item}
+
+mixin navbar
+	+navbarItem('Home', '/')
+	div(class='nav-spacer item')
+	+navbarItem('Proposal', '/proposal')
+	div(class='item')
+		img(src='public/images/logo.png')
+	+navbarItem('Research', '/research')
+	div(class='nav-spacer item')
+	+navbarItem('Funding', '/funding')
+
+doctype html
+html(lang='en')
+	head
+		title #{title} - Free Internet Alliance
+		meta(charset='utf-8')
+
+		link(rel='apple-touch-icon' sizes='180x180' href='/public/apple-touch-icon.png')
+		link(rel='icon' type='image/png' sizes='32x32' href='/public/favicon-32x32.png')
+		link(rel='icon' type='image/png' sizes='16x16' href='/public/favicon-16x16.png')
+		link(rel='manifest' href='/public/site.webmanifest')
+		link(rel='mask-icon' href='/public/safari-pinned-tab.svg' color='#5bbad5')
+		link(rel='shortcut icon' href='/public/favicon.ico')
+		meta(name='apple-mobile-web-app-title' content='FIA')
+		meta(name='application-name' content='FIA')
+		meta(name='msapplication-TileColor' content='#da532c')
+		meta(name='msapplication-config' content='/public/browserconfig.xml')
+		meta(name='theme-color' content='#79cac7')
+
+		link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap')
+
+		link(rel='stylesheet' type='text/css' href='semantic/dist/semantic.min.css')
+		link(rel='stylesheet' type='text/css' href='public/css/layout.css')
+		script(src='node_modules/jquery/dist/jquery.min.js')
+		script(src='semantic/dist/semantic.min.js')
+	body
+		nav(class='ui teal segment')
+			div(class='ui container')
+				div(class='ui fluid five item large secondary menu')
+					+navbar
+
+		block content
+
+		footer(class='ui inverted vertical footer segment')
+			div(class='ui container')
+				div(class='ui stackable inverted divided equal height stackable grid')
+					div(class='two wide column')
+						h5 Site map
+						a(href='/') Home
+						br
+						a(href='/proposal') Proposal
+						br
+						a(href='/research') Research
+						br
+						a(href='/funding') Funding
+					div(class='four wide column')
+						h5 Individual links
+						div(class='ui stackable inverted equal height equal width stackable grid')
+							div(class='column')
+								a(href='http://bit.ly/2Q97j8n' target='_blank') Proposal
+								br
+								a(href='http://bit.ly/2JOPb2p' target='_blank') Research log
+								br
+								a(href='http://bit.ly/2warsS4' target='_blank') Rhetorical précis
+								br
+								//- REPLACE THIS WITH ACTUAL AD WHEN UPLOADED
+								a(href='https://youtu.be/dQw4w9WgXcQ' target='_blank') Advertisement
+							div(class='column')
+								a(href='http://bit.ly/2LVuS5S' target='_blank') Rhetorical analysis
+								br
+								a(href='http://bit.ly/2JSFgsr' target='_blank') Advocacy letter
+								br
+								a(href='http://bit.ly/2VRScWP' target='_blank') Presentation
+
+					div(class='nine wide column')
+						p ©2019 The Free Internet Alliance. All rights reserved. The Free Internet Alliance, the globe logo, and the acronym FIA are all registered trademarks of the Free Internet Alliance. (just kidding)
+						p Website design and hosting by Nikolas Brandt. In fact, the whole thing is made by Nikolas Brandt.
+						p Made with Semantic UI, jQuery, express, jade, and probably a few other things.
+

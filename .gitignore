@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+# macOS
+.DS_Store
+
+# JetBrains
+.idea/
+
+# Semantic builds
+semantic/dist/

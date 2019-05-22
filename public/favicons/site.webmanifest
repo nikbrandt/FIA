@@ -1,0 +1,19 @@
+{
+    "name": "FIA",
+    "short_name": "FIA",
+    "icons": [
+        {
+            "src": "/publci/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/publci/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#79cac7",
+    "background_color": "#79cac7",
+    "display": "standalone"
+}

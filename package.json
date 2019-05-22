@@ -1,0 +1,26 @@
+{
+  "name": "fia",
+  "version": "1.0.0",
+  "description": "A website for a fictitious organization, the Free Internet Alliance",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gymnophoria/FIA.git"
+  },
+  "author": "Gymnophoria",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Gymnophoria/FIA/issues"
+  },
+  "homepage": "https://github.com/Gymnophoria/FIA#readme",
+  "dependencies": {
+    "express": "^4.17.0",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "pug": "^2.0.3",
+    "semantic-ui": "^2.4.2"
+  }
+}
