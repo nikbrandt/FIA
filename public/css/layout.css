@@ -3,8 +3,9 @@
     padding: 4em 0;
 }
 
-.item {
+.item a, span {
     margin: 0 5px 0 5px !important;
+    padding: 1.5em 0 !important;
 }
 
 .item img {
@@ -19,4 +20,13 @@
 .footer p {
     color: #afafaf;
     line-height: 1.2;
+}
+
+.ui.segment {
+    margin: 1rem 0 0 0;
+    box-shadow: 0 0 10px black;
+}
+
+footer {
+    box-shadow: 0 0 10px black !important;
 }

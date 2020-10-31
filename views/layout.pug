@@ -9,7 +9,8 @@ mixin navbar
 	div(class='nav-spacer item')
 	+navbarItem('Proposal', '/proposal')
 	div(class='item')
-		img(src='public/images/logo.png')
+		a(href='/')
+			img(src='public/images/logo.png')
 	+navbarItem('Research', '/research')
 	div(class='nav-spacer item')
 	+navbarItem('Funding', '/funding')
@@ -59,7 +60,7 @@ html(lang='en')
 						br
 						a(href='/funding') Funding
 					div(class='four wide column')
-						h5 Individual links
+						h5 Resource links
 						div(class='ui stackable inverted equal height equal width stackable grid')
 							div(class='column')
 								a(href='http://bit.ly/2Q97j8n' target='_blank') Proposal
@@ -68,8 +69,7 @@ html(lang='en')
 								br
 								a(href='http://bit.ly/2warsS4' target='_blank') Rhetorical précis
 								br
-								//- REPLACE THIS WITH ACTUAL AD WHEN UPLOADED
-								a(href='https://youtu.be/dQw4w9WgXcQ' target='_blank') Advertisement
+								a(href='https://youtu.be/y6fjtKywnmo' target='_blank') Advertisement
 							div(class='column')
 								a(href='http://bit.ly/2LVuS5S' target='_blank') Rhetorical analysis
 								br
@@ -77,8 +77,8 @@ html(lang='en')
 								br
 								a(href='http://bit.ly/2VRScWP' target='_blank') Presentation
 
-					div(class='nine wide column')
+					div(class='nine wide column footer')
 						p ©2019 The Free Internet Alliance. All rights reserved. The Free Internet Alliance, the globe logo, and the acronym FIA are all registered trademarks of the Free Internet Alliance. (just kidding)
 						p Website design and hosting by Nikolas Brandt. In fact, the whole thing is made by Nikolas Brandt.
-						p Made with Semantic UI, jQuery, express, jade, and probably a few other things.
+						p Made with Semantic UI, jQuery, express, jade, and probably a few other things. Code on #[a(href="https://github.com/Gymnophoria/FIA") GitHub].
 
