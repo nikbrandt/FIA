@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Gymnophoria/FIA#readme",
   "dependencies": {
     "express": "^4.17.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "moment": "^2.24.0",
     "pug": "^2.0.3",
     "semantic-ui": "^2.4.2"
